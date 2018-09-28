@@ -9,7 +9,9 @@ package CalMatrizes;
  *
  * @author Felpi
  */
-public class DescobrirLeC {    
+public class DescobrirLeC { 
+    
+    //descobre o numero de linhas da matriz informada
     public int descobLinhas(String mTxt){           
         int l=1,c=1;        
         for (int k =0; k < mTxt.length(); k++){
@@ -18,12 +20,14 @@ public class DescobrirLeC {
             }else if(mTxt.charAt(k) == ','){
                 l++;
                 c = 1;
+                k++;
             }            
         }        
-        System.out.println("coluna: " + c + " linha: " + l);        
+        //System.out.println("coluna: " + c + " linha: " + l);        
         return l;        
     }    
     
+    //descobre o numero de colunas da matriz
     public int descobColunas(String mTxt){           
         int l=1,c=1;        
         for (int k =0; k < mTxt.length(); k++){
@@ -32,9 +36,10 @@ public class DescobrirLeC {
             }else if(mTxt.charAt(k) == ','){
                 l++;
                 c = 1;
+                k++;
             }         
         }        
-        System.out.println("coluna: " + c + " linha: " + l);        
+        //System.out.println("coluna: " + c + " linha: " + l);        
         return c;        
     }        
 }
