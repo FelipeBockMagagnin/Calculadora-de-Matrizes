@@ -23,7 +23,7 @@ public class Matriz {
     //coloca os valores informados pelo usuario dentro da matriz,
     //também converte os numeros para romano utilizando do metodo decodificar
     void InputValores(String mtext){
-        int  l =0, c =0;       
+        int  l = 0, c = 0;       
         for(int k = 0; k < (mtext.length()); k++){
             if(mtext.charAt(k) == ' '){
                 c++;
@@ -55,6 +55,7 @@ public class Matriz {
     public int decodificar(char roman){
         switch(roman){
             case 'M' : return 1000;
+            case 'D' : return 500;
             case 'C' : return 100;
             case 'L' : return 50;
             case 'X' : return 10;

@@ -22,8 +22,7 @@ public class DescobrirLeC {
                 c = 1;
                 k++;
             }            
-        }        
-        //System.out.println("coluna: " + c + " linha: " + l);        
+        }              
         return l;        
     }    
     
@@ -38,8 +37,7 @@ public class DescobrirLeC {
                 c = 1;
                 k++;
             }         
-        }        
-        //System.out.println("coluna: " + c + " linha: " + l);        
+        }              
         return c;        
     }        
 }
